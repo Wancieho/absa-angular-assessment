@@ -2,3 +2,33 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  background: slategrey;
+}
+
+.btn {
+  border-radius: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+label {
+  display: block;
+
+  * {
+    width: 100%;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+input {
+  padding  : 6px 9px;
+  border   : 2px solid lightgrey;
+  font-size: 14px;
+}

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
 import { LandingRoutingModule } from './landing-routing.module';
 import { HeaderModule } from '../../shared/header/header.module';
+import { SearchesModule } from '../../shared/searches/searches.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,7 @@ import { HeaderModule } from '../../shared/header/header.module';
     CommonModule,
     LandingRoutingModule,
     HeaderModule,
-  ],
-  exports: [
-    LandingComponent,
+    SearchesModule,
   ],
 })
 export class LandingModule { }
