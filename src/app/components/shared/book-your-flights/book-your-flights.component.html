@@ -1,17 +1,42 @@
-<div>
-  <span class="heading">Book Your Flights</span>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <label>
-      <span>From</span>
-      <input type="text" placeholder="Eg. Melbourne, Australia" />
-    </label>
+<form [formGroup]="formGroup">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="heading">Book Your Flights</span>
+      </div>
+      <div class="col-md-6">
+        <label>
+          <span>From</span>
+          <input type="text" placeholder="Eg. Melbourne, Australia" />
+        </label>
+      </div>
+      <div class="col-md-6">
+        <label>
+          <span>To</span>
+          <input type="text" placeholder="Eg. New York, United States" />
+        </label>
+      </div>
+      <div class="col-md-5">
+        <label>
+          <span>Departure</span>
+          <input type="date" />
+        </label>
+      </div>
+      <div class="col-md-5">
+        <label>
+          <span>Return</span>
+          <input type="date" />
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label>
+          <span>Adults</span>
+          <input type="number" />
+        </label>
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-primary">Search Flights</button>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6">
-    <label>
-      <span>To</span>
-      <input type="text" />
-    </label>
-  </div>
-</div>
+</form>

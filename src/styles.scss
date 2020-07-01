@@ -3,8 +3,11 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+@import "~src/assets/css/variables.scss";
+
 body {
-  background: slategrey;
+  background     : url('~src/assets/img/eiffel-tower.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .btn {
@@ -16,14 +19,20 @@ body {
 }
 
 label {
-  display: block;
+  display      : block;
+  margin-bottom: 30px;
 
   * {
     width: 100%;
   }
 
   span {
-    display: block;
+    display       : block;
+    margin-bottom : 5px;
+    color         : dimgrey;
+    text-transform: uppercase;
+    font-size     : 13px;
+    font-weight   : 600;
   }
 }
 
@@ -31,4 +40,28 @@ input {
   padding  : 6px 9px;
   border   : 2px solid lightgrey;
   font-size: 14px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+  }
+
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+.btn {
+  padding       : 8px 18px;
+  text-transform: uppercase;
+  font-size     : 13px;
+  font-weight   : 600;
+  border-radius : 2px;
+
+  &.btn-primary {
+    background-color: $burgundy;
+    border          : none;
+    border-bottom   : 3px solid darken($burgundy, 10%);
+  }
 }
