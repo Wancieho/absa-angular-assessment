@@ -1,5 +1,6 @@
 @import "~src/assets/css/variables.scss";
 
+// #TODO: mobile nav
 ul {
   justify-content: flex-end;
   margin         : 0;
@@ -9,8 +10,18 @@ ul {
     flex-direction: column;
     margin-left   : 10px;
 
+    @media (max-width: $tabletPortrait) {
+      margin-left: 2px;
+    }
+
     &:first-child {
       margin: 0;
+    }
+
+    &.active {
+      .btn {
+        border-color: rgba(220, 220, 255, 0.5);
+      }
     }
 
     .btn {
@@ -21,11 +32,9 @@ ul {
       color      : white;
       border     : 1px solid transparent;
       white-space: nowrap;
-    }
 
-    &.active {
-      .btn {
-        border-color: rgba(220, 220, 255, 0.5);
+      @media (max-width: $tabletPortrait) {
+        padding: 8px 13px;
       }
     }
   }

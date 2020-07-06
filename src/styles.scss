@@ -65,3 +65,9 @@ input {
     border-bottom   : 3px solid darken($burgundy, 10%);
   }
 }
+
+form {
+  .alert {
+    margin-top: -30px;
+  }
+}
